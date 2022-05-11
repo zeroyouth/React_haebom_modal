@@ -1,0 +1,213 @@
+.body {
+  font-family: "Pretendard";
+}
+/* .inside {
+  position: absolute;
+  height: 0px;
+  left: 2.34%;
+  right: 2.34%;
+  top: 10px;
+  font-size: 18px;
+} */
+
+.modal {
+  display: none;
+  height: 100%;
+}
+
+.modal.on {
+  display: block;
+}
+
+.modal::after {
+  display: block;
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.cont-form-login {
+  width: 100%;
+  max-width: 760px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 20;
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  padding-bottom: 60px;
+  box-shadow: 0px 4px 12px rgba(34, 37, 41, 0.12);
+}
+
+.txt-form {
+  margin: 80px 0 32px;
+  padding-left: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #222529;
+  text-align: center;
+}
+/* 이름,전화번호,이메일*/
+
+.form-login {
+  padding: 0 100px 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 24px;
+}
+
+.input-box {
+  flex-grow: 1;
+  gap: 30px;
+  text-align: left;
+}
+.input-box .inp:focus {
+  outline: 3px auto #ff7a00;
+}
+
+.input-box .inp {
+  display: flex;
+  width: 100%;
+  padding: 15px 0 15px 16px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ff7a00;
+  margin-bottom: 4px;
+}
+
+.name {
+  font-family: "Semi-Bold-Pretendard";
+  font-size: 14px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #222529;
+  text-align: left;
+}
+
+.inp-error {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4a5056;
+  text-align: left;
+}
+
+/*-------- 수신동의-------*/
+.labl-hold {
+  text-align: left;
+  display: block;
+  color: #222529;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Pretendard";
+  line-height: 24px;
+  letter-spacing: -2px;
+}
+.agree {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #222529;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 24px 0 40px;
+}
+
+/*----- 신청하기 버튼 -------*/
+.btn-apply {
+  width: 464px;
+  display: block;
+  margin: 0 auto;
+  padding: 17px 0 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: #ff7a00;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*-------공유하기,꽃 검색하기 버튼------*/
+.bottom-button,
+.bottom-txt {
+  font-family: "Pretendard";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 464px;
+  margin: 12px auto 10px;
+  gap: 10px;
+}
+
+.bottom-txt {
+  font-family: "Pretendard";
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #4a5056;
+  letter-spacing: -1.5px;
+}
+
+.btn-share,
+.btn-search {
+  /* position: absolute; */
+  font-family: "Pretendard";
+  flex-grow: 1;
+  display: block;
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #aeb5bc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #878e95;
+  height: 44px;
+  left: 388px;
+  top: 532px;
+}
+
+/* 닫기버튼 */
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 15px;
+  box-sizing: content-box;
+  background-color: transparent;
+  border: none;
+}

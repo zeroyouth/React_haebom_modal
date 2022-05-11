@@ -1,0 +1,34 @@
+
+
+.accodion_area{
+
+    display: flex;
+    width: 976px;
+}
+
+
+.accodion_area .viewmore_btn{
+    display: block;
+    width: 72px;
+    height: 32px;
+    padding: 0;
+}
+
+.accodion_area .viewmore_btn::before{
+    display: inline;
+}
+
+.accodion_area .chart_area{
+   
+}
+
+.accodion_area .chart_area::before{
+    display: inline;
+    
+}
+
+.accodion_area .chart_area.act{
+    
+     
+}
+

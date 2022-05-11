@@ -1,0 +1,9 @@
+.tablebody{
+    display: flex;
+}
+
+.intable{
+    display: inline-block;
+    width: 976px;
+    height: 48px;
+}

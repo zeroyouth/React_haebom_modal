@@ -1,0 +1,18 @@
+.intable{
+    display: inline-block;
+}
+
+.information{
+   
+}
+
+.right{
+    display: inline-block;
+}
+
+.left{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
