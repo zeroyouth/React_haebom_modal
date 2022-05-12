@@ -8,7 +8,13 @@ import './reset.css';
 import './openModal.css';
 import close from '../../static/img/Close.svg';
 
-const OpenModal = () => {
+const OpenModal = ({ modalClose }) => {
+
+  const onCloseModal = e => {
+    if (e.target === e.currentTarget) {
+      modalClose();
+    }
+  }
 
   const [name, setName] = useState("");
   const [phonenumber, setPhonenumber] = useState("");
@@ -45,6 +51,8 @@ const OpenModal = () => {
     } = event;
     setEmail(value);
   };
+
+
 
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -135,7 +143,9 @@ const OpenModal = () => {
               <p>주변 플로리스트에게 플로웨이를 소개해 보세요!</p>
               <p>꽃을 검색하고 꽃 시장 정보를 확인해 보세요!</p>
             </div>
-            <button type="button" className="btn-close"><img src={close} alt="모달창 닫기" /></button>
+            <button type="button" className="btn-close"
+            >
+              <img src={close} alt="모달창 닫기" onClick={onCloseModal} /></button>
           </form>
         </section>
       </article>
